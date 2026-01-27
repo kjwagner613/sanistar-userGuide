@@ -202,7 +202,8 @@ header h1 {
     display: grid;
     grid-template-columns: minmax(460px, 70%) 1fr;
     gap: 14px;
-    align-items: start;
+    height: 580px;
+    align-items: center;
     margin-bottom: 54px;
     border: 2px solid #e2dfdf;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -226,7 +227,7 @@ header h1 {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 450px;
+    height: 500px;
 }
 
 .image-note h4 {
@@ -589,3 +590,8 @@ code {
 }
 
 /* zoomable  ↑  */
+
+#entry {
+    /* transform: scale(0.7); */
+
+}
