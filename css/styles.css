@@ -611,5 +611,10 @@ code {
 .fitPic {
     max-height: 500px;
     width: auto;
+}
+
+.fitPic2 {
+    max-height: 700px;
+
 
 }
