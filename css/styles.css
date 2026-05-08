@@ -294,7 +294,15 @@ header h1 {
     height: 580px;
 }
 
-
+.footer-text {
+    align-self: center;
+    justify-self: center;
+    font-size: 0.75rem;
+    line-height:.2;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color:#dbd9d9;
+}
 
 .image-note h4,
 .image-note-long h4 {
