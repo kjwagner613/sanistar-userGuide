@@ -1,72 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Service Tickets</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="layout-container">
-        <aside class="sidebar" id="site-sidebar"></aside>
+      <aside class="sidebar" id="site-sidebar"></aside>
 
-        <main class="main-content">
-            <header id="site-header"></header>
-<!-- 
-            <div class="content">
-                <div class="section-header">
-                    <div class="section-number">4</div>
-                    <h2>Service Tickets</h2> -->
+      <main class="main-content">
+        <header id="site-header"></header>
 
-                    <div class="content">
-                        <div class="section-header">
-                            <div class="section-number">4</div>
-                            <h2>Service Tickets</h2>
-                            <!-- <span class="estimated-time">⏱️ 10-15 minutes</span> -->
-                        </div>
+        <div class="content">
+          <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>Service Tickets</h2>
+            <p class="section-intro">
+              Service tickets are designed to help move work through the
+              business, capture anything that will help business functions, and
+              deliver that information to those who need it to do their work. It
+              is provided as a tool and meant as an aid in completing tasks
+              efficiently. As a tool, it must be developed to the state that
+              best fits your needs. If you have feedback on how to make it
+              better, please share!
+            </p>
 
-                        <div class="container1">
-                            <section class="left-section">
-                                <h3>Resolve at call.</h3>
-                                <ul>
-                                    <li>Ths is where the system storesd its context. Like our awareness of our
-                                        environment.</li>
-                                    <li>To make them easier to work on, I brought them up to a table of contents, or
-                                        list</li>
-                                </ul>
-                            </section>
-                            <section class="right-section">
-                                <h3>Technician Contributions</h3>
-                                <ul>
-                                    <li>Master Data - Foundational, does not frequently change</li>
-                                    <li>Transactional - Records of business events and activities</li>
-                                    <li>Configuration - Settings and preferences that control system behavior</li>
-                                </ul>
-                            </section>
-                            <section class="right-section">
-                                <h3>Concluding the Ticket</h3>
-                                <ul>
-                                    <li>Master Data - Foundational, does not frequently change</li>
-                                    <li>Transactional - Records of business events and activities</li>
-                                    <li>Configuration - Settings and preferences that control system behavior</li>
-                                </ul>
-                            </section>
-                        </div>
+            <!-- <span class="estimated-time">⏱️ 10-15 minutes</span> -->
+          </div>
 
+          <div class="container1 service-ticket-layout">
+            <section class="left-section">
+              <h3>Life of a Service Ticket</h3>
+              <ul>
+                <li>
+                  When a customer calls with any issue, that is a good time to
+                  launch into the Create Service Ticket screen. You can create a
+                  service ticket:
+                  <ul>
+                    <li>
+                      In the Ticketing Service module that is reached through
+                      the PowerApp Main Menu.
+                    </li>
+                    <li>
+                      Or, from the Operations Hub by clicking the "Direct to
+                      Create Service Ticket" button.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Having it open while talking with the customer facilitates
+                  capturing all the relevant information in one place, and
+                  allows you to easily share that information with the rest of
+                  the team.
+                </li>
+                <li>
+                  When you have concluded the call, click submit to finalize the
+                  create process and initiate the workflow.
+                </li>
+                <li>
+                  Once submitted, you will be taken to the services dashboard.
+                  If you were able to solve the issue on that first call, you
+                  can close the ticket by clicking on the "My Requests" counter,
+                  Select your pending ticket on the top left where all your
+                  tickets will be listed, add some notes in the details section,
+                  then click "Resolved Over Call." Do this now because once
+                  action has been logged on this ticket, this option will no
+                  longer be available.
+                </li>
+              </ul>
+            </section>
+            <section class="right-section">
+              <h3>Technician Contributions</h3>
+              <ul>
+                <li>
+                  After the initial submission, a ticket will be assigned to a
+                  technician. It is also a good idea to keep the ticket
+                  open when working on the product being serviced.
+                </li>
+                <li>
+                  Technicians will be notified via email of the new ticket
+                  assignment. When ready to open the ticket, go to the services
+                  module in the SaniStar App, click on the service ticket
+                  dashboard (second level beneath the top create row) and click,
+                  "Assigned Tasks" then select the pending ticket from the top
+                  left list of tickets, and the details section will appear on
+                  the right side of your screen. Scroll down to find your notes
+                  section, and parts used.
+                </li>
+                <li>
+                  Any notes provided will be very helpful for future reference,
+                  and will be valuable to help diagnose issues that span
+                  multiple tickets. It is important to select the parts, and
+                  quantity of part in the section to the right of notes. This is
+                  used to calculate the cost of the service for the invoice.
+                  Also, the total time you spent on the service should be logged
+                  here as well.
+                </li>
+                <li>
+                  Technicians, when you have completed the service, please
+                  change the status to "Resolved" and click Update. This will
+                  update SLA, and notify shipping of a new item to be shipped,
+                  and accounting to prepare the invoice.
+                </li>
+                <li>
+                  Shipping, when you have packaged the item and placed it in the
+                  shipping queue, please enter a note in the shipping section,
+                  Shipped, Complete, or anything relevant and click Update.
+                </li>
+                <li>
+                  Invoicer, when the invoice has been sent out, please enter a
+                  note, anything relevant, and click Update.
+                </li>
+                <li>
+                  When both shipping and invoicing have been completed, and
+                  notes have been entered in the ticket, the ticket will close
+                  itself.
+                </li>
+              </ul>
+            </section>
+            <section class="ticket-diagram">
+              <a
+                href="../images/diagram-placeholder.png"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="../images/diagram-placeholder.png"
+                  alt="Diagram Placeholder"
+                />
+              </a>
+            </section>
+            <!-- <section class="right-section">
+              <h3>Concluding the Ticket</h3>
+              <ul>
+                <li>Master Data - Foundational, does not frequently change</li>
+                <li>
+                  Transactional - Records of business events and activities
+                </li>
+                <li>
+                  Configuration - Settings and preferences that control system
+                  behavior
+                </li>
+              </ul>
+            </section> -->
+          </div>
 
-                        <div class="image-row">
-                            <a href="https://sanistardump.sharepoint.com/sites/Sani-StarOperations/SitePages/Sani-Star-Workflow-and-Automation-Resourcese.aspx"
-                                target="_blank" rel="noopener noreferrer">
-                                <img src="../images/TOC.png" alt="Product Build"></a>
-                            <div class="image-note">
-                                <h4>TOC for Master Data Lists</h4>
-                                <p>Convenient way to get access to the lists and data you need to work on.</p>
-                            </div>
-                        </div>
+          <div class="image-row">
+            <a
+              href="../images/serviceTicketLife.png"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="../images/serviceTicketLife.png" alt="Service Ticket Lifecycle"
+            /></a>
+            <div class="image-note">
+              <h4>Service Ticket Lifecycle</h4>
+              <p>
+                Shows the major handoffs from ticket creation through
+                technician resolution, shipping, invoicing, and closure.
+              </p>
+            </div>
+          </div>
 
-
+          <!-- 
                         <div class="prerequisites">
                             <h3>Section Prerequisites</h3>
                             <ul>
@@ -75,9 +174,9 @@
                                 <li>Access to your business email</li>
                                 <li>Modern web browser</li>
                             </ul>
-                        </div>
+                        </div> -->
 
-                        <div class="important">
+          <!-- <div class="important">
                             <h4>Before You Begin</h4>
                             <p>Important information about this section...</p>
                         </div>
@@ -103,24 +202,23 @@
                                 <li>Created organization</li>
                                 <li>Received credentials email</li>
                             </ul>
-                        </div>
+                        </div> -->
 
-                        <div class="navigation-links">
-                            <a href="../index.html" class="nav-link">← Back to Overview</a>
-                            <a href="section2.html" class="nav-link">Next: AD Integration →</a>
-                        </div>
-                    </div>
-        </main>
+          <div class="navigation-links">
+            <a href="../index.html" class="nav-link">← Back to Overview</a>
+            <a href="BuildOrder.html" class="nav-link">Next: Build Order →</a>
+          </div>
+        </div>
+      </main>
     </div>
 
     <div class="modal" id="imageModal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div class="image-caption" id="imageCaption"></div>
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="image-caption" id="imageCaption"></div>
     </div>
 
     <script src="../js/partials.js"></script>
     <script src="../js/modal.js"></script>
-</body>
-
+  </body>
 </html>

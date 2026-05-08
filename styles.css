@@ -41,6 +41,14 @@ body {
     transform: scale(.9);
 }
 
+.section-intro {
+    line-height: 1.2;
+    font-size: .9rem;
+    margin-right: 15%;
+    text-align: justify;
+   }
+
+
 .container1 {
     background-color: var(--section-bg);
     display: block;

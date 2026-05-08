@@ -1,83 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory</title>
-    <link rel="stylesheet" href="../css/styles.css">
-</head>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div class="layout-container">
-        <aside class="sidebar" id="site-sidebar"></aside>
+      <aside class="sidebar" id="site-sidebar"></aside>
 
-        <main class="main-content">
-            <header id="site-header"></header>
+      <main class="main-content">
+        <header id="site-header"></header>
 
-            <div class="content">
-                <div class="section-header">
-                    <div class="section-number">6</div>
-                    <h2>Inventory</h2>
-                    <!-- <span class="estimated-time">⏱️ 10-15 minutes</span> -->
-                </div>
+        <div class="content">
+          <div class="section-header">
+            <div class="section-number">6</div>
+            <h2>Inventory</h2>
+            <!-- <span class="estimated-time">⏱️ 10-15 minutes</span> -->
+          </div>
 
-                <div class="container1">
-                    <section class="left-section">
-                        <h3>Results of:</h3>
-                        <ul>
-                            <li>Sales Orders</li>
-                            <li>Manual Trigger</li>
-                        </ul>
-                    </section>
-                    <section class="right-section">
-                        <h3>Initiate</h3>
-                        <ul>
-                            <li>Demand on Inventory - Affects available stock</li>
-                            <li>Control the conversion of reserved stock to consumed</li>
-                            <li>If you cancel a Build Order mid process, the parts it has reserved are returned via
-                                replenishment</li>
-                        </ul>
-                    </section>
-                </div>
+          <div class="container1">
+            <section class="left-section">
+              <h3>Results of:</h3>
+              <ul>
+                <li>Sales Orders</li>
+                <li>Manual Trigger</li>
+              </ul>
+            </section>
+            <section class="right-section">
+              <h3>Initiate</h3>
+              <ul>
+                <li>Demand on Inventory - Affects available stock</li>
+                <li>Control the conversion of reserved stock to consumed</li>
+                <li>
+                  If you cancel a Build Order mid-process, the parts it has
+                  reserved are returned via replenishment
+                </li>
+              </ul>
+            </section>
+          </div>
 
-                <div class="image-row">
-                    <img src="../images/ProdBuildDash.png" alt="Product Build">
-                    <div class="image-note">
-                        <h4>Production Build Dashboard</h4>
-                        <p>To find out what activity is generating these metrics, just click and they will be brought up
-                            for you.</p>
-                    </div>
-                </div>
+          <div class="image-row">
+            <img
+              src="../images/inventory-live.png"
+              alt="Live Inventory Dashboard"
+            />
+            <div class="image-note-long">
+              <h4>Live Inventory Dashboard</h4>
+              <p>
+                The inventory system displays only live, real‑time status. It
+                continuously evaluates incoming replenishments, consumption from
+                service tickets and product builds, and near‑term sales order
+                demand. From this, it calculates three key values: On Hand, the
+                physical quantity currently on site; Available, the quantity
+                that can be used without impacting in‑progress work; and
+                Reserved, the quantity already committed to active services or
+                builds. Beyond these live counts, the system also projects when
+                new part orders will be required and identifies trends or
+                patterns that may indicate issues on the line, such as faulty
+                batches of consumed parts.
+              </p>
+            </div>
+          </div>
 
-                <div class="image-row">
-                    <img src="../images/ProductDecompose.png" alt="Decompose Products">
-                    <div class="image-note">
-                        <h4>Product Decompose</h4>
-                        <p>The system tracks parts consumption and knows exactly what components are needed for each
-                            build.</p>
-                        <p>It uses a file called a BOM (Bill of Materials) to define the relationships.</p>
-                        <p>When a sales order is submitted, it decomposes the products to a schedule or parts that are
-                            kept in inventory.</p>
-                        <p>If there is not sufficient inventory a deficiency will be sent, to Greg, letting him know.
-                            You can also see deficiencies on the dashboard.</p>
-                    </div>
-                </div>
-                <div class="image-row">
-                    <img src="../images/email-shortage.png" alt="Deficiency e-Mail">
-                    <div class="image-note">
-                        <h4>Deficiency e-Mail</h4>
-                        <p>On this email you can see that 10 S-CONDUIT must be ordered to be able to fulfill this sale.
-                        </p>
+          <div class="image-row">
+            <img
+              src="../images/ProdBuildDash.png"
+              alt="Production Build Dashboard"
+            />
+            <div class="image-note">
+              <h4>Production Build Dashboard</h4>
+              <p>
+                To find out what activity is generating these metrics, just
+                click and they will be brought up for you.
+              </p>
+            </div>
+          </div>
 
-                    </div>
-                </div>
-                <div class="important">
-                    <h4>Before You Begin</h4>
-                    <p>Important information about this section...</p>
-                </div>
+          <div class="image-row">
+            <img
+              src="../images/ProductDecompose.png"
+              alt="Decompose Products"
+            />
+            <div class="image-note-long">
+              <h4>Product Decompose</h4>
+              <p>
+                The system tracks parts consumption and knows exactly what
+                components are needed for each build.
+              </p>
+              <p>
+                It uses a file called a BOM (Bill of Materials) to define the
+                relationships.
+              </p>
+              <p>
+                When a sales order is submitted, it decomposes the products to a
+                schedule of parts that are kept in inventory.
+              </p>
+              <p>
+                If there is not sufficient inventory, a deficiency will be sent
+                to Greg. You can also see deficiencies on the dashboard.
+              </p>
+            </div>
+          </div>
+          <div class="image-row">
+            <img src="../images/email-shortage.png" alt="Deficiency Email" />
+            <div class="image-note">
+              <h4>Deficiency Email</h4>
+              <p>
+                In this email you can see that 10 S-CONDUIT must be ordered to
+                fulfill this sale.
+              </p>
+            </div>
+          </div>
 
-                <!--            
+          <!--            
                 <div class="verification-list">
                     <h4>Verification Checklist</h4>
                     <ul class="checklist">
@@ -87,22 +125,23 @@
                     </ul>
                 </div> -->
 
-                <div class="navigation-links">
-                    <a href="../index.html" class="nav-link">← Back to Overview</a>
-                    <a href="section2.html" class="nav-link">Next: Inventory →</a>
-                </div>
-            </div>
-        </main>
+          <div class="navigation-links">
+            <a href="../index.html" class="nav-link">← Back to Overview</a>
+            <a href="ShippingInvoicing.html" class="nav-link"
+              >Next: Shipping & Invoicing →</a
+            >
+          </div>
+        </div>
+      </main>
     </div>
 
     <div class="modal" id="imageModal">
-        <span class="modal-close">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div class="image-caption" id="imageCaption"></div>
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="image-caption" id="imageCaption"></div>
     </div>
 
     <script src="../js/partials.js"></script>
     <script src="../js/modal.js"></script>
-</body>
-
+  </body>
 </html>

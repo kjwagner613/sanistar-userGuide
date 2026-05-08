@@ -32,6 +32,25 @@ body {
     margin: 0 auto;
 }
 
+.ticket-diagram {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 16px;
+}
+
+.ticket-diagram a {
+    display: block;
+    width: 100%;
+    max-width: 517px;
+}
+
+.ticket-diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .logo-plate {
     /* background-color: grey; */
     display: flex;
@@ -40,6 +59,14 @@ body {
     padding: 1rem 0;
     transform: scale(.9);
 }
+
+.section-intro {
+    line-height: 1.2;
+    font-size: .9rem;
+    margin-right: 15%;
+    text-align: justify;
+   }
+
 
 .container1 {
     background-color: var(--section-bg);
@@ -55,6 +82,10 @@ body {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.service-ticket-layout {
+    padding-bottom: 20px;
+}
+
 @media (min-width: 769px) {
     .container1 {
         display: grid;
@@ -62,6 +93,24 @@ body {
         grid-template-rows: 1fr;
         gap: 24px;
         align-items: flex-start;
+    }
+
+    .three-column-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-ticket-layout {
+        grid-template-rows: auto auto;
+    }
+
+    .service-ticket-layout .right-section {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .service-ticket-layout .ticket-diagram {
+        grid-column: 1;
+        grid-row: 2;
     }
 }
 
@@ -247,7 +296,8 @@ header h1 {
 
 
 
-.image-note h4 {
+.image-note h4,
+.image-note-long h4 {
     margin: 0 0 0.5rem 0;
     color: var(--secondary-color);
     font-size: 1.25rem;
