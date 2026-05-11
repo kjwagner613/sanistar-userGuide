@@ -209,7 +209,7 @@ body {
 /* Header */
 header {
     /* background: var(--primary-color); */
-    background-image: url(../images/panarama.webp);
+    background-image: url(/images/panarama.webp);
     background-size: cover;
     background-position: center;
     color: white;
