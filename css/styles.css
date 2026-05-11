@@ -64,6 +64,7 @@ body {
     line-height: 1.2;
     font-size: .9rem;
     margin-right: 15%;
+    margin-left: 5%;
     text-align: justify;
    }
 
@@ -137,7 +138,7 @@ body {
     color: var(--text-color);
     text-decoration: none;
     border-radius: 4px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.405rem;
 }
 
 .nav-item:hover {
@@ -255,11 +256,12 @@ header h1 {
     display: grid;
     grid-template-columns: minmax(460px, 70%) 1fr;
     gap: 14px;
-    height: 580px;
+    height: fit-content;
     align-items: center;
     margin-bottom: 54px;
     border: 2px solid #e2dfdf;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
 }
 
 .image-row img {
@@ -273,6 +275,67 @@ header h1 {
 
 }
 
+.clickable-image-link {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.clickable-image-link img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.clickable-image-link:hover img,
+.clickable-image-link:focus-visible img {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 3px rgba(0, 125, 193, 0.2);
+}
+
+.details-cta-link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.details-cta-link:hover,
+.details-cta-link:focus-visible {
+    color: var(--primary-color);
+}
+
+.page-details {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.page-details h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-details h4 {
+    color: var(--secondary-color);
+    margin-top: 1.25rem;
+    margin-bottom: 0.35rem;
+}
+
+.page-details-cta {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
+
 .image-note {
     background: white;
     border: 1px solid #dee2e6;
@@ -280,7 +343,7 @@ header h1 {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 500px;
+    height: fit-content;
     overflow: scroll;
 }
 
@@ -291,7 +354,7 @@ header h1 {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 580px;
+    height: fit-content;
 }
 
 .footer-text {
@@ -679,4 +742,56 @@ code {
     max-height: 700px;
 
 
+}
+
+#svcTicket1 {
+    height: 600px;
+    width: auto;
+    margin-left: 10%;
+    border-radius: 18px;
+    border:lightgrey solid 2px;
+
+}
+
+#learningRoad {
+    height: 120px;
+    width: auto;
+
+    margin-right: 15%;
+    border-radius: 18px;
+    border:lightgrey solid 2px; 
+    
+
+
+}
+
+.soft-edge-container {
+  position: relative; /* Required for pseudo-element positioning */
+  width: 300px; /* Adjust to your image size */
+  height: 150px;
+  /* Optional: Add rounded corners for a smoother look */
+  border-radius: 12px;
+  overflow: hidden; /* Clip pseudo-element to container bounds */
+  left: 35%
+}
+ 
+.target-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preserve aspect ratio */
+}
+ 
+.soft-edge-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 5;
+  bottom: 0;
+  /* Define the "edge" width (15px here) with transparent border */
+  border: 5px solid transparent;
+  /* Blur the area under the pseudo-element (the image edges) */
+  backdrop-filter: blur(2px); /* Adjust blur strength (px) */
+  /* Ensure clicks pass through the pseudo-element to the image */
+  pointer-events: none;
 }

@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Module</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <div class="layout-container">
+      <aside class="sidebar" id="site-sidebar"></aside>
+
+      <main class="main-content">
+        <header id="site-header"></header>
+
+        <div class="content">
+          <div class="section-header">
+            <div class="section-number">4</div>
+            <h2>Service Module</h2>
+            <p class="section-intro">
+              Service tickets are designed to help move work through the
+              business, capture anything that will help business functions, and
+              deliver that information to those who need it to do their work. It
+              is provided as a tool and meant as an aid in completing tasks
+              efficiently. As a tool, it must be developed to the state that
+              best fits your needs. If you have feedback on how to make it
+              better, please share!
+            </p>
+
+            <!-- <span class="estimated-time">⏱️ 10-15 minutes</span> -->
+          </div>
+
+          <div class="container1 service-ticket-layout">
+            <section class="left-section">
+              <h3>In this module you can create and manage:</h3>
+              <ul>
+                <li>Sales Orders</li>
+                <li>Build Orders</li>
+                <li>Service Tickets</li>
+                <li>Support Tickets</li>
+              </ul>
+            </section>
+            <section class="right-section">
+              <h3>Work and Organize data:</h3>
+              <ul>
+                <li>Dashboards to track and manage work</li>
+                <li>Reports to analyze performance and trends</li>
+                <li>Historical Data by Date, Technician, Status and Client</li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="image-row">
+            <a
+              href="ServiceModuleDetails.html"
+              class="clickable-image-link"
+              aria-label="View details for Service Ticket Lifecycle"
+            >
+              <img
+                src="../images/serviceTicketLife.png"
+                alt="Service Ticket Lifecycle"
+              />
+            </a>
+            <div class="image-note">
+              <h4>Service Ticket Lifecycle</h4>
+              <p>
+                The purpose of tickets are to help move work through the
+                business. They are also designed to capture anything that will
+                help business functions, and deliver that information to those
+                who need it to do their work. It is provided as a tool and meant
+                as an aid in completing tasks efficiently. As a tool, it must be
+                developed to the state that best fits your needs. Like many
+                things, it functions only as well as the information it is
+                provided. Be as thorough as time permits and it can aid you in
+                reducing effort while increasing productivity. If you have
+                feedback on how to make it better, please share!
+              </p>
+            </div>
+          </div>
+
+          <div class="image-row">
+            <a
+              href="ServiceModuleDetails.html"
+              class="clickable-image-link"
+              aria-label="View details for Forms and Logs"
+            >
+              <img src="../images/svcTicket1.png" alt="Forms and Logs" />
+            </a>
+            <div class="image-note">
+              <h4>Forms and Logs</h4>
+              <p>
+                Forms and Logs do more than just capture information. The system
+                uses the content to configure next steps, generate notifications
+                or reminders, or flag potential issues. For example, if a ticket
+                is open for more than 3 days without being marked as resolved,
+                the system will automatically send a reminder. If a ticket is
+                marked as resolved but not updated with shipping information
+                within 2 days, the system will flag the ticket for review and
+                send a notification to the shipping team. By providing thorough
+                and accurate information in the forms and logs, you can help the
+                system work effectively to keep work moving smoothly and prevent
+                issues before they arise.
+              </p>
+            </div>
+          </div>
+
+          <div class="page-details-cta">
+            <!-- <a href="ServiceModuleDetails.html" class="details-cta-link"
+              >Click here for more information</a
+            > -->
+            <div class="soft-edge-container">
+              <a
+                href="ServiceModuleDetails.html"
+                class="clickable-image-link"
+                aria-label="More content details"
+              >
+                <img
+                  id="learningRoad"
+                  src="../images/learningStreet-styled.png"
+                  alt="Learn More Road"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="navigation-links">
+            <a href="../index.html" class="nav-link">← Back to Overview</a>
+            <a href="BuildOrder.html" class="nav-link">Next: Build Order →</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal" id="imageModal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="image-caption" id="imageCaption"></div>
+    </div>
+
+    <script src="../js/partials.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inventory - Live Inventory Details</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <div class="layout-container">
+      <aside class="sidebar" id="site-sidebar"></aside>
+
+      <main class="main-content">
+        <header id="site-header"></header>
+
+        <div class="content">
+          <div class="section-header">
+            <div class="section-number">6</div>
+            <h2>Live Inventory Details</h2>
+          </div>
+
+          <div class="note">
+            <h4>Purpose</h4>
+            <p>
+              This page expands on the Live Inventory dashboard while the main
+              Inventory page stays concise and consistent with the rest of the
+              guide.
+            </p>
+          </div>
+
+          <div class="image-row">
+            <img
+              src="../images/inventory-live.png"
+              alt="Live Inventory Dashboard Details"
+              class="step-image"
+            />
+            <div class="image-note-long">
+              <h4>How to Read the Dashboard</h4>
+              <p>
+                Use these fields as your operating baseline when reviewing
+                current and near-term supply status.
+              </p>
+              <ul>
+                <li>
+                  <strong>On Hand:</strong> Physical quantity currently in stock.
+                </li>
+                <li>
+                  <strong>Reserved:</strong> Quantity already allocated to active
+                  service tickets and production builds.
+                </li>
+                <li>
+                  <strong>Available:</strong> Quantity that can be used now
+                  without impacting committed work.
+                </li>
+                <li>
+                  <strong>Projected Need:</strong> Forecasted reorder demand based
+                  on current shortages and upcoming order commitments.
+                </li>
+              </ul>
+              <p>
+                Click dashboard metrics to drill into the activity that generated
+                each value and verify whether shortages are caused by incoming
+                demand, active consumption, or delayed replenishment.
+              </p>
+            </div>
+          </div>
+
+          <div class="important">
+            <img src="../images/warning.png" alt="Warning" />
+            <p>
+              If Available drops unexpectedly while On Hand appears stable,
+              verify new reservations from Sales Orders or open Service Tickets
+              before manually adjusting quantities.
+            </p>
+          </div>
+
+          <div class="navigation-links">
+            <a href="Inventory.html" class="nav-link">← Back to Inventory</a>
+            <a href="ShippingInvoicing.html" class="nav-link"
+              >Continue: Shipping &amp; Invoicing →</a
+            >
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="modal" id="imageModal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div class="image-caption" id="imageCaption"></div>
+    </div>
+
+    <script src="../js/partials.js"></script>
+    <script src="../js/modal.js"></script>
+  </body>
+</html>

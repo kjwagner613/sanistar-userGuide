@@ -43,24 +43,39 @@
           </div>
 
           <div class="image-row">
-            <img
-              src="../images/inventory-live.png"
-              alt="Live Inventory Dashboard"
-            />
+            <a
+              href="InventoryLiveDetails.html"
+              class="clickable-image-link"
+              aria-label="View details for Live Inventory Dashboard"
+            >
+              <img
+                src="../images/inventory-live.png"
+                alt="Live Inventory Dashboard"
+              />
+            </a>
             <div class="image-note-long">
               <h4>Live Inventory Dashboard</h4>
               <p>
-                The inventory system displays only live, real‑time status. It
+                The inventory system displays only live, real-time status. It
                 continuously evaluates incoming replenishments, consumption from
-                service tickets and product builds, and near‑term sales order
+                service tickets and product builds, and near-term sales order
                 demand. From this, it calculates three key values: On Hand, the
                 physical quantity currently on site; Available, the quantity
-                that can be used without impacting in‑progress work; and
+                that can be used without impacting in-progress work; and
                 Reserved, the quantity already committed to active services or
                 builds. Beyond these live counts, the system also projects when
                 new part orders will be required and identifies trends or
                 patterns that may indicate issues on the line, such as faulty
                 batches of consumed parts.
+              </p>
+              <p>
+                <a href="InventoryLiveDetails.html" class="details-cta-link"
+                  >View Details</a
+                >
+                or
+                <a href="InventoryLiveDetails.html" class="details-cta-link"
+                  >Click here for more information</a
+                >
               </p>
             </div>
           </div>
@@ -68,10 +83,10 @@
           <div class="image-row">
             <img
               src="../images/ProdBuildDash.png"
-              alt="Production Build Dashboard"
+              alt="Service Module Dashboard"
             />
             <div class="image-note">
-              <h4>Production Build Dashboard</h4>
+              <h4>Service Module Dashboard</h4>
               <p>
                 To find out what activity is generating these metrics, just
                 click and they will be brought up for you.
@@ -91,8 +106,7 @@
                 components are needed for each build.
               </p>
               <p>
-                It uses a file called a BOM (Bill of Materials) to define the
-                relationships.
+                We use a BOM (Bill of Materials) and PAM (Product Assembly Module) to define the relationship from parts to products.
               </p>
               <p>
                 When a sales order is submitted, it decomposes the products to a
