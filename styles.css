@@ -40,7 +40,24 @@ body {
     max-width: 1800px;
     margin: 0 auto;
 }
+.ticket-diagram {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 16px;
+}
 
+.ticket-diagram a {
+    display: block;
+    width: 100%;
+    max-width: 517px;
+}
+
+.ticket-diagram img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .logo-plate {
     /* background-color: grey; */
     display: flex;
@@ -64,7 +81,8 @@ body {
 .section-intro {
     line-height: 1.2;
     font-size: .9rem;
-    margin-right: 15%;
+    margin-right: 15%; 
+    margin-left: 5%;
     text-align: justify;
    }
 
@@ -82,7 +100,9 @@ body {
     /* margin-bottom: 54px; */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
+.service-ticket-layout {
+    padding-bottom: 20px;
+}
 @media (min-width: 769px) {
     .container1 {
         display: grid;
@@ -91,7 +111,23 @@ body {
         gap: 24px;
         align-items: flex-start;
     }
-}
+    .three-column-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .service-ticket-layout {
+        grid-template-rows: auto auto;
+    }
+
+    .service-ticket-layout .right-section {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .service-ticket-layout .ticket-diagram {
+        grid-column: 1;
+        grid-row: 2;
+    }}
 
 /* Sidebar Styles */
 .sidebar {
@@ -234,7 +270,7 @@ header h1 {
     display: grid;
     grid-template-columns: minmax(460px, 70%) 1fr;
     gap: 14px;
-    height: 580px;
+    height: fit-content;
     align-items: center;
     margin-bottom: 54px;
     border: 2px solid #e2dfdf;
@@ -251,7 +287,66 @@ header h1 {
     /* max-height: 250px */
 
 }
+.clickable-image-link {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+}
 
+.clickable-image-link img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.clickable-image-link:hover img,
+.clickable-image-link:focus-visible img {
+    transform: scale(1.01);
+    box-shadow: 0 0 0 3px rgba(0, 125, 193, 0.2);
+}
+
+.details-cta-link {
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.details-cta-link:hover,
+.details-cta-link:focus-visible {
+    color: var(--primary-color);
+}
+
+.page-details {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-left: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.page-details h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-details h4 {
+    color: var(--secondary-color);
+    margin-top: 1.25rem;
+    margin-bottom: 0.35rem;
+}
+
+.page-details-cta {
+    text-align: center;
+    margin: 1.5rem 0;
+    font-size: 1rem;
+}
 .image-note {
     background: white;
     border: 1px solid #dee2e6;
@@ -259,7 +354,7 @@ header h1 {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 500px;
+ height: fit-content;
     overflow: scroll;
 }
 
@@ -270,16 +365,26 @@ header h1 {
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 580px;
+    height: fit-content;
 }
 
 
-
-.image-note h4 {
+.footer-text {
+    align-self: center;
+    justify-self: center;
+    font-size: 0.75rem;
+    line-height:.2;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    color:#dbd9d9;
+}
+.image-note h4,
+.image-note-long h4 {
     margin: 0 0 0.5rem 0;
     color: var(--secondary-color);
     font-size: 1.25rem;
 }
+
 
 @media (max-width: 768px) {
     .image-row {
@@ -682,4 +787,56 @@ code {
     max-height: 700px;
 
 
+}
+
+#svcTicket1 {
+    height: 600px;
+    width: auto;
+    margin-left: 10%;
+    border-radius: 18px;
+    border:lightgrey solid 2px;
+
+}
+
+#learningRoad {
+    height: 120px;
+    width: auto;
+
+    margin-right: 15%;
+    border-radius: 18px;
+    border:lightgrey solid 2px; 
+    
+
+
+}
+
+.soft-edge-container {
+  position: relative; /* Required for pseudo-element positioning */
+  width: 300px; /* Adjust to your image size */
+  height: 150px;
+  /* Optional: Add rounded corners for a smoother look */
+  border-radius: 12px;
+  overflow: hidden; /* Clip pseudo-element to container bounds */
+  left: 35%
+}
+ 
+.target-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preserve aspect ratio */
+}
+ 
+.soft-edge-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10px;
+  right: 5;
+  bottom: 0;
+  /* Define the "edge" width (15px here) with transparent border */
+  border: 5px solid transparent;
+  /* Blur the area under the pseudo-element (the image edges) */
+  backdrop-filter: blur(2px); /* Adjust blur strength (px) */
+  /* Ensure clicks pass through the pseudo-element to the image */
+  pointer-events: none;
 }
